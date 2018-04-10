@@ -82,7 +82,7 @@ if __name__ == "__main__":
 	adam = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 	model.compile(optimizer=adam, loss='mean_squared_error', metrics=['accuracy'])
 
-	iter=3
+	iter=2
 	# Train:
 	print('Start training ...')
 	start = time.time()
