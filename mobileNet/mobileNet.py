@@ -91,9 +91,36 @@ if __name__ == "__main__":
 	end = time.time()
 	print ("Model took %0.2f seconds to train"%(end - start))
 
-
 	model.save_weights('trained_model_weights.h5')
 	#model.save('trained_model.h5')
+
+	print(history.history.keys()) 
+
+	plt.figure(1)  
+
+	# summarize history for accuracy  
+
+	plt.subplot(211)  
+	plt.plot(history.history['acc'])  
+	plt.plot(history.history['val_acc'])  
+	plt.title('model accuracy')  
+	plt.ylabel('accuracy')  
+	plt.xlabel('epoch')  
+	plt.legend(['train', 'test'], loc='upper left')  
+
+	# summarize history for loss  
+
+	plt.subplot(212)  
+	plt.plot(history.history['loss'])  
+	plt.plot(history.history['val_loss'])  
+	plt.title('model loss')  
+	plt.ylabel('loss')  
+	plt.xlabel('epoch')  
+	plt.legend(['train', 'test'], loc='upper left')  
+	#plt.show()  
+	plt.savefig('visualize.png')
+	
+	
 
 
 
