@@ -38,7 +38,7 @@ model.compile(optimizer='rmsprop',
 # but this plot grows step by step
 
 history = model.fit(X_train, Y_train,
-          epochs=50,
+          epochs=3,
           validation_data=(X_test, Y_test),
           verbose=1)
           
