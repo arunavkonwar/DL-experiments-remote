@@ -8,7 +8,7 @@ from keras.layers import Flatten, Dense, Activation
 
 import numpy as np
 from matplotlib import pyplot as plt
-from IPython.display import clear_output	
+#from IPython.display import clear_output	
 
 
 # data loading
