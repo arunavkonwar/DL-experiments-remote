@@ -7,6 +7,8 @@ from keras.models import Sequential
 from keras.layers import Flatten, Dense, Activation
 
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 #from IPython.display import clear_output	
 
