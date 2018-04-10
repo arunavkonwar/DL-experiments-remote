@@ -48,6 +48,8 @@ if __name__ == "__main__":
 	#import models
 	import time
 	from keras.callbacks import ModelCheckpoint
+	import matplotlib
+	matplotlib.use('Agg')
 
 	np.random.seed(7) # for reproducibility
 
