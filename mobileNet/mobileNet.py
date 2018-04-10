@@ -80,12 +80,12 @@ if __name__ == "__main__":
 	adam = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
 	model.compile(optimizer=adam, loss='mean_squared_error', metrics=['accuracy'])
 
-	epochs=10
+	iter=3
 	# Train:
 	print('Start training ...')
 	start = time.time()
 	history = model.fit(x = x_data_train, y = y_data_train,
-		  epochs=10,
+		  epochs=iter,
 		  batch_size=batch_size, validation_split = 0.20, shuffle = True, verbose = 1)  
 		  #By setting verbose 0, 1 or 2 you just say how do you want to 'see' the training progress for each epoch.
 	end = time.time()
